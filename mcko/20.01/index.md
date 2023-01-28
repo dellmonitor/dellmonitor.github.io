@@ -204,28 +204,18 @@ P.S. - необязательно использовать сладость ка
       ```
 
       ```python
-      def count_change(amount):
-          return cc(amount, 4)
+      KINDS_OF_COINS = [1, 2, 5, 10]
 
-      def cc(amount, kinds_of_coins):
+      def count_change(amount, coins):
           if amount == 0:
               return 1
-          elif amount < 0 or kinds_of_coins == 0:
+          if amount < 0 or coins == []:
               return 0
-          else:
-              return cc(amount, kinds_of_coins - 1) + cc(amount - first_denomination(kinds_of_coins), kinds_of_coins)
 
-      def first_denomination(kinds_of_coins):
-          if kinds_of_coins == 1:
-              return 1
-          elif kinds_of_coins == 2:
-              return 2
-          elif kinds_of_coins == 3:
-              return 5
-          elif kinds_of_coins == 4:
-              return 10
+          return (count_change(amount, coins[:-1]) + 
+                  count_change(amount - coins[-1], coins))
 
-      print(count_change(100))
+      print(count_change(100, KINDS_OF_COINS))
       ```
 
 24.   В текстовом файле находится цепочка из символов латинского алфавита A, B, C, D, E, F. Найдите максимальную длину цепочки вида CACACA.... (состоящей из фрагментов CA, последний фрагмент может быть неполным).
