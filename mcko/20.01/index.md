@@ -189,6 +189,45 @@ P.S. - необязательно использовать сладость ка
 
 ### Вариант 2
 
+8.    Инженер Петр пишет программу для банкомата, чтобы он мог разменивать денежные средства. В распоряжении у банкомата имеются монеты номиналом 1 рубль, 2, 5 и 10. Количество монет каждого вида не ограничено. Сколько существует способов разменять сумму 100 рублей? При размене необязательно использовать монеты каждог номинала.
+
+      ```python
+      n = 100
+      count = 0
+      for n1 in range(n//1+1):
+          for n2 in range(n//2+1):
+              for n5 in range(n//5+1):
+                  for n10 in range(n//10+1):
+                      if n1 + 2*n2 + 5*n5 + 10*n10 == n:
+                          count += 1
+      print(count)
+      ```
+
+      ```python
+      def count_change(amount):
+          return cc(amount, 4)
+
+      def cc(amount, kinds_of_coins):
+          if amount == 0:
+              return 1
+          elif amount < 0 or kinds_of_coins == 0:
+              return 0
+          else:
+              return cc(amount, kinds_of_coins - 1) + cc(amount - first_denomination(kinds_of_coins), kinds_of_coins)
+
+      def first_denomination(kinds_of_coins):
+          if kinds_of_coins == 1:
+              return 1
+          elif kinds_of_coins == 2:
+              return 2
+          elif kinds_of_coins == 3:
+              return 5
+          elif kinds_of_coins == 4:
+              return 10
+
+      print(count_change(100))
+      ```
+
 24.   В текстовом файле находится цепочка из символов латинского алфавита A, B, C, D, E, F. Найдите максимальную длину цепочки вида CACACA.... (состоящей из фрагментов CA, последний фрагмент может быть неполным).
 
       <a href="/mcko/20.01/24.txt" download>Файл</a> к заданию
