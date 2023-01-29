@@ -11,7 +11,7 @@
       ten = [x for x in a if x%10==0]
       odd = [x for x in a if x%2!=0]
       even = [x for x in a if x%2==0]
-      num = len(five)*len(even)+len(ten)*len(odd) - len(ten)*len(five)
+      num = len(five)*len(even) + len(ten)*len(odd) - len(ten)*len(five)
       mf = max(five) + max(even)
       mt = max(ten) + max(odd)
 
