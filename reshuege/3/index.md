@@ -39,5 +39,5 @@
                   if ms < seven[i] + seven[k]:
                       ms = seven[i] + seven[k]
                       ans = str(seven[i]) + ' ' + str(seven[k])
-      print(ms, ans)
+      print(ans)
       ```
