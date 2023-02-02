@@ -24,7 +24,7 @@
       
       case1 = sum(zero[-1:-4:-1])
       case2 = sum(one[-1:-4:-1])
-      case3 = zero[-1] + one[-1] + two[-1]
-      print(case1, case2, case3)
-      print(max(case1, case2, case3))
+      case3 = sum(two[-1:-4:-1])
+      case4 = zero[-1] + one[-1] + two[-1]
+      print(max(case1, case2, case3, case4))
       ```
