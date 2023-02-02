@@ -32,6 +32,7 @@
       seven = [x for x in a if x % 7 == 0]
       notseven = [x for x in a if x % 7 != 0]
       ms = 0
+      ans = "0 0"
       for i in range(0, len(seven)):
           for j in range(0, len(notseven)):
               if seven[i] % 160 != notseven[j] % 160:
