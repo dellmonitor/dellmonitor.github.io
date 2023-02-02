@@ -11,7 +11,6 @@
       ```python
       f = open('27_B.txt')
       a = [int(x) for x in f]
-      n = a[0]
       del a[0]
       
       zero = [x for x in a if x%3==0]
