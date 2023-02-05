@@ -31,18 +31,18 @@
       del a[0]
       seven = [x for x in a if x % 7 == 0]
       notseven = [x for x in a if x % 7 != 0]
-      ms = 0
-      ans = "0 0"
+      maxsum = 0
+      answer = "0 0"
       for i in range(0, len(seven)):
           for j in range(0, len(notseven)):
               if seven[i] % 160 != notseven[j] % 160:
-                  if ms < seven[i] + notseven[j]:
-                      ms = seven[i] + notseven[j]
-                      ans = str(seven[i]) + ' ' + str(notseven[j])
+                  if maxsum < seven[i] + notseven[j]:
+                      maxsum = seven[i] + notseven[j]
+                      answer = str(seven[i]) + ' ' + str(notseven[j])
           for k in range(i+1, len(seven)):
               if seven[i] % 160 != seven[k] % 160:
-                  if ms < seven[i] + seven[k]:
-                      ms = seven[i] + seven[k]
-                      ans = str(seven[i]) + ' ' + str(seven[k])
-      print(ans)
+                  if maxsum < seven[i] + seven[k]:
+                      maxsum = seven[i] + seven[k]
+                      answer = str(seven[i]) + ' ' + str(seven[k])
+      print(answer)
       ```
