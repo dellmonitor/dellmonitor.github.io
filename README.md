@@ -10,3 +10,4 @@
 * [3-й вариант](/reshuege/3/index.md)
 * [4-й вариант](/reshuege/4/index.md)
 * [5-й вариант](/reshuege/5/index.md)
+* [8-й вариант](/reshuege/8/index.md)
