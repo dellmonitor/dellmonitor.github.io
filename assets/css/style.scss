@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+a {
+	color: rgb(74, 154, 224);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(74, 154, 224, 0.3);
+}
+
+a:hover {
+	color: rgb(211, 0, 0);
+	text-decoration: none;
+	border-bottom-color: rgba(211, 0, 0, 0.3);
+}
+
+.anchorjs-link {
+	text-decoration: none;
+	border: none;
+}
