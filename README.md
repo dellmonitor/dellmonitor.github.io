@@ -11,6 +11,7 @@
 ## Решу ЕГЭ
 
 * [1-й вариант](/reshuege/1/index.md)
+* [2-й вариант](/reshuege/2/index.md)
 * [3-й вариант](/reshuege/3/index.md)
 * [4-й вариант](/reshuege/4/index.md)
 * [5-й вариант](/reshuege/5/index.md)
