@@ -13,6 +13,10 @@
 * [1-й вариант](/probnik/1/index.md)
 * [2-й вариант](/probnik/2/index.md)
 
+## КЕГЭ
+
+* [Богданов 3 июня](/kompege/bogdanov/03.06/index.md)
+
 ## Решу ЕГЭ
 
 * [1-й вариант](/reshuege/1/index.md)
