@@ -33,7 +33,8 @@ for i in range(n):
     number = int(f.readline())
     if number % d != 0:
         left = queue[-1]
-        maxS = max(maxS, left + number)
+        if left != 0:
+            maxS = max(maxS, left + number)
         queue[0] = max(queue[0], number)
     else:
         if count == t:
